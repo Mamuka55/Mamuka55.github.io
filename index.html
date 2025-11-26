@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Добро пожаловать!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0 none;
+      background: none;
+    }
+    body {
+      font-weight: normal;
+      font-size: 11px;
+      font-family: Arial, sans-serif;
+      background: url('https://i.pinimg.com/736x/94/91/83/9491832fad036f54b70a5d6afb61179d.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .server-info {
+      text-align: center;
+      color: white;
+      width: 90%;
+      max-width: 600px;
+    }
+    .rules-container {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+    .rules-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #78a5df;
+    }
+    .rules-list {
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .rules-list li {
+      margin-bottom: 12px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .rules-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #78a5df;
+      font-size: 20px;
+    }
+    .group-link {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #78a5df;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+    .group-link:hover {
+      background: #5a8fd8;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="body-login-form">
+
+<!-- Блок с правилами сервера и ссылкой на группу -->
+<div class="server-info">
+  <div class="rules-container">
+    <h3 class="rules-title">Правила сервера</h3>
+    <ul class="rules-list">
+      <li>Уважайте других игроков и администрацию</li>
+      <li>Запрещено использование читов и стороннего ПО</li>
+      <li>Не распространяйте личную информацию других игроков</li>
+      <li>Соблюдайте правила конкретных игровых режимов</li>
+      <li>Запрещены оскорбления, расизм и дискриминация</li>
+      <li>Нарушение правил ведет к блокировке аккаунта</li>
+    </ul>
+  </div>
+  <a href="https://vk.com/omskpublic_55?from=groups" class="group-link" target="_blank">Присоединиться к нашей группе</a>
+</div>
+
+<script type="text/javascript">
+  var platformLanguage = navigator && (
+      navigator.language ||
+        navigator.browserLanguage ||
+        navigator.systemLanguage ||
+        navigator.userLanguage ||
+        null );
+  
+  if (platformLanguage && platformLanguage.match("ru")) {
+    document.title = "Добро пожаловать на наш сервер!";
+  }
+</script>
+</body>
+</html>
